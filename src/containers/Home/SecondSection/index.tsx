@@ -1,6 +1,6 @@
-import React from 'react'
 import Container from 'components/Container'
 import PromoCarousel from './PromoCarousel'
+import Packages from './Packages'
 import styles from './SecondSection.module.css'
 import 'react-multi-carousel/lib/styles.css'
 const SecondSection = () => {
@@ -8,6 +8,7 @@ const SecondSection = () => {
         <section className={styles.section}>
             <Container>
                 <PromoCarousel/>
+                <Packages/>
             </Container>
         </section>
     )
