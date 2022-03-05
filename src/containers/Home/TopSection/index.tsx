@@ -1,5 +1,6 @@
 import Container from 'components/Container'
 import Button from 'components/Button'
+import InfoItem from './InfoItem'
 import styles from './TopSection.module.css'
 
 const TopSection = () => {
@@ -17,12 +18,30 @@ const TopSection = () => {
                             Jelajahi Dunia yang indah Dengan Satu Sentuhan dengan pesan tiket di Travelo kamu akan
                             mendapatkan pelayanan terbaik untuk wisata liburanmu kemana saja dan kapan saja
                         </p>
-                        
+
                         <Button>
                             Lihat Paket
                         </Button>
                         
-                    </div>    
+                    </div>
+                    <div className="flex gap-40 mx-auto">
+                        <InfoItem
+                            label="+30"
+                            subLabel="Negara"
+                        />
+                        <InfoItem
+                            label="+1500"
+                            subLabel="Penginapan"
+                        />
+                        <InfoItem
+                            label="+100"
+                            subLabel="Tempat Wisata"
+                        />
+                        <InfoItem
+                            label="50.000"
+                            subLabel="Pelanggan"
+                        />
+                    </div> 
                 </div>
             </Container>
         </section>
