@@ -1,9 +1,13 @@
 import Button from 'components/Button'
 import Input from 'components/Input'
 import Layout from 'components/Layout'
+import { useComponentLogic } from './hooks'
+
 import styles from './Login.module.css'
 
 const Login = () => {
+    const { register, handleSubmit, onSubmit, errors } = useComponentLogic()
+
     return(
             <Layout noFooter>
                 <section className={styles.section}>
@@ -22,7 +26,7 @@ const Login = () => {
                             </a>
                         </div>
 
-                        <form className="flex flex-col mt-8">
+                        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-8">
                             <Input
                                 label="Email"
                                 type="email"
