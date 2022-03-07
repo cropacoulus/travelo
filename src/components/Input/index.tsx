@@ -46,7 +46,7 @@ const Input = ({
                 id={name}
                 placeholder={placeholder}
                 className={styles.input}
-                aria-desribedby={inputErrorHint}
+                aria-describedby={inputErrorHint}
             />
 
             {type === 'password' ? (
